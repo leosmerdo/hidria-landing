@@ -1,1 +1,773 @@
+/*==================================================
+HIDRIA FISIOTERAPIA ACUÁTICA
+STYLE.CSS
+PARTE 1
+==================================================*/
 
+/*==========================
+RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#222;
+    overflow-x:hidden;
+    line-height:1.7;
+
+}
+
+/*==========================
+VARIABLES
+==========================*/
+
+:root{
+
+    --primary:#1b4d7a;
+    --secondary:#5ba8d8;
+    --light:#f7f9fb;
+    --white:#ffffff;
+    --dark:#222;
+    --gray:#777;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    --radius:20px;
+
+}
+
+/*==========================
+CONTAINER
+==========================*/
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+
+    width:100%;
+    background:#fff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+/*==========================
+NAVBAR
+==========================*/
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo img{
+
+    width:170px;
+
+    transition:.4s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+    width:100%;
+    height:85vh;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:1.5s;
+
+}
+
+.hero:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*==========================
+SEPARADOR
+==========================*/
+
+.wave{
+
+    width:100%;
+
+    color:#ffffff;
+
+    line-height:0;
+
+}
+
+.wave svg{
+
+    display:block;
+
+    width:100%;
+
+    height:70px;
+
+}
+
+/*==========================
+PRESENTACIÓN
+==========================*/
+
+.presentation{
+
+    padding:90px 0;
+
+}
+
+.presentation-box{
+
+    width:100%;
+
+    background:#fff;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+}
+
+.presentation-box h2{
+
+    font-size:2.3rem;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+    color:var(--dark);
+
+}
+
+.presentation-box p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    margin-bottom:40px;
+
+    font-size:17px;
+
+}
+
+/*==========================
+BOTÓN
+==========================*/
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 42px;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    background:#1b4d7a;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(27,77,122,.20);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 40px rgba(27,77,122,.25);
+
+}
+
+/*==========================
+SECTION TITLE
+==========================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/*==========================
+SPECIALTIES
+==========================*/
+
+.specialties{
+
+    padding:100px 0;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+/*==========================
+CARD
+==========================*/
+
+.card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    padding:25px;
+
+    text-align:center;
+
+    font-size:1.4rem;
+
+}
+
+.card p{
+
+    padding:0 25px 35px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+/*==================================================
+STYLE.CSS
+PARTE 2
+==================================================*/
+
+/*==========================
+QUIÉNES SOMOS
+==========================*/
+
+.about{
+
+    padding:120px 0;
+
+}
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.about-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.about-content h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:30px;
+
+}
+
+.about-content p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+    text-align:justify;
+
+}
+
+/*==========================
+REDES SOCIALES
+==========================*/
+
+.social{
+
+    padding:100px 0;
+
+    text-align:center;
+
+}
+
+.social h2{
+
+    font-size:2rem;
+
+    margin-bottom:45px;
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.social-icons a{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:28px;
+
+    background:#fff;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+    padding:60px 0;
+
+    text-align:center;
+
+    border-top:1px solid #eee;
+
+}
+
+.footer-logo img{
+
+    width:140px;
+
+    margin-bottom:25px;
+
+}
+
+footer p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+/*==========================
+WHATSAPP
+==========================*/
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    background:#25D366;
+
+    color:#fff;
+
+    font-size:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.12);
+
+}
+
+/*==========================
+ANIMACIONES
+==========================*/
+
+.card,
+.presentation-box,
+.about-image img,
+.social-icons a{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+SCROLL BAR
+==========================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#c9c9c9;
+
+    border-radius:50px;
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+height:60vh;
+
+}
+
+.presentation-box{
+
+padding:40px;
+
+}
+
+.about-content{
+
+text-align:center;
+
+}
+
+.about-content p{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.logo img{
+
+width:140px;
+
+}
+
+.hero{
+
+height:45vh;
+
+}
+
+.presentation-box h2{
+
+font-size:1.8rem;
+
+}
+
+.section-title h2{
+
+font-size:2rem;
+
+}
+
+.about-content h2{
+
+font-size:2rem;
+
+}
+
+.social-icons{
+
+gap:20px;
+
+}
+
+.social-icons a{
+
+width:60px;
+
+height:60px;
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+width:92%;
+
+}
+
+.presentation{
+
+padding:70px 0;
+
+}
+
+.specialties{
+
+padding:70px 0;
+
+}
+
+.about{
+
+padding:70px 0;
+
+}
+
+.social{
+
+padding:70px 0;
+
+}
+
+.presentation-box{
+
+padding:30px;
+
+}
+
+.presentation-box h2{
+
+font-size:1.6rem;
+
+}
+
+.btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.card img{
+
+height:220px;
+
+}
+
+}
+
+/*==========================
+FIN DEL ARCHIVO
+==========================*/
