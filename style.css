@@ -358,10 +358,6 @@ CARD
     font-size:15px;
 
 }
-/*==================================================
-STYLE.CSS
-PARTE 2
-==================================================*/
 
 /*==========================
 QUIÉNES SOMOS
@@ -797,5 +793,76 @@ header.scroll{
     background:rgba(255,255,255,.95);
 
     transition:.4s;
+
+}
+.cta-final{
+
+    position:relative;
+
+    width:100%;
+
+    height:550px;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    margin:120px auto;
+
+}
+
+.cta-final img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.cta-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    padding:40px;
+
+}
+
+.cta-overlay h2{
+
+    font-size:3rem;
+
+    max-width:700px;
+
+    margin-bottom:25px;
+
+}
+
+.cta-overlay p{
+
+    max-width:650px;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+    line-height:1.8;
 
 }
