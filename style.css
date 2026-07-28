@@ -1,6 +1,8 @@
 /*==================================================
 HIDRIA FISIOTERAPIA ACUÁTICA
-
+STYLE.CSS
+PARTE 1
+==================================================*/
 
 /*==========================
 RESET
@@ -149,10 +151,10 @@ BOTÓN NAVBAR
 .btn-nav:hover{
     background: #084b84;
 }
+
 /*==========================
 HERO
 ==========================*/
-
 
 .hero{
 
@@ -184,38 +186,7 @@ HERO
     transform:scale(1.05);
 
 }
-.btn{
 
-    padding:16px 38px;
-
-    font-size:17px;
-
-    border-radius:10px;
-
-}
-.btn{
-
-    background:rgba(9,52,99,.92);
-
-    backdrop-filter:blur(10px);
-
-    color:#fff;
-
-    padding:16px 38px;
-
-    border-radius:12px;
-
-    transition:.3s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
-
-}
 /*==========================
 SEPARADOR
 ==========================*/
@@ -431,6 +402,11 @@ CARD
     font-size:15px;
 
 }
+
+/*==================================================
+STYLE.CSS
+PARTE 2
+==================================================*/
 
 /*==========================
 QUIÉNES SOMOS
@@ -837,35 +813,7 @@ height:220px;
 
 }
 
-/*==============================
-Animaciones JS
-==============================*/
-
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(60px);
-
-    transition:all .8s ease;
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-header.scroll{
-
-    backdrop-filter:blur(12px);
-
-    background:rgba(255,255,255,.95);
-
-    transition:.4s;
-
-}
+/*==========================
+FIN DEL ARCHIVO
+==========================*/
 
