@@ -153,19 +153,35 @@ BOTÓN NAVBAR
 HERO
 ==========================*/
 
-.hero-content{
 
-    position:absolute;
+.hero{
 
-    left:50%;
+    width:100%;
+    height:85vh;
 
-    top:65%;
+    overflow:hidden;
 
-    transform:translateX(-50%);
+    position:relative;
 
-    z-index:2;
+}
 
-    text-align:center;
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:1.5s;
+
+}
+
+.hero:hover img{
+
+    transform:scale(1.05);
 
 }
 .btn{
