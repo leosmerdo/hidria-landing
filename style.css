@@ -96,8 +96,9 @@ NAVBAR
 
 .logo img{
 
-    width:170px;
-
+    width:95px;
+    height:auto;
+    display:block;
     transition:.4s;
 
 }
