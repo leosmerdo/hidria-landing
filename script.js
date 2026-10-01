@@ -59,22 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /*==============================
-    Botón WhatsApp
-    ==============================*/
+    /*============================== 
+Botón WhatsApp 
+==============================*/
 
-    const whatsapp = document.querySelector(".whatsapp");
+const whatsapp = document.querySelector(".whatsapp");
 
-    whatsapp.addEventListener("mouseenter", () => {
+whatsapp.addEventListener("mouseenter", () => {
+    whatsapp.style.transform = "scale(1.15)";
+});
 
-        whatsapp.style.transform = "scale(1.15)";
+whatsapp.addEventListener("mouseleave", () => {
+    whatsapp.style.transform = "scale(1)";
+});
 
-    });
-
-    whatsapp.addEventListener("mouseleave", () => {
-
-        whatsapp.style.transform = "scale(1)";
-
-    });
-
+whatsapp.addEventListener("click", () => {
+    window.open("https://wa.me/59162161670", "_blank");
 });
