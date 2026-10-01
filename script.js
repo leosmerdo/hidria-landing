@@ -59,20 +59,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /*============================== 
-Botón WhatsApp 
-==============================*/
+  const whatsapp = document.querySelector(".whatsapp");
 
-const whatsapp = document.querySelector(".whatsapp");
+if (whatsapp) {
 
-whatsapp.addEventListener("mouseenter", () => {
-    whatsapp.style.transform = "scale(1.15)";
-});
+    whatsapp.addEventListener("mouseenter", () => {
+        whatsapp.style.transform = "scale(1.15)";
+    });
 
-whatsapp.addEventListener("mouseleave", () => {
-    whatsapp.style.transform = "scale(1)";
-});
+    whatsapp.addEventListener("mouseleave", () => {
+        whatsapp.style.transform = "scale(1)";
+    });
 
-whatsapp.addEventListener("click", () => {
-    window.open("https://wa.me/59162161670", "_blank");
-});
+    whatsapp.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.open(
+            "https://wa.me/59162161670?text=Hola,%20quiero%20información%20sobre%20fisioterapia%20acuática",
+            "_blank"
+        );
+    });
+
+}
